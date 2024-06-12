@@ -1,0 +1,23 @@
+name: fault_assessment_app
+description: A Flutter app for fault assessment using image uploads and form submissions.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.3
+  image_picker: ^0.8.4+4
+  provider: ^6.0.2
+  cloudinary_sdk: ^5.0.0+1 
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
