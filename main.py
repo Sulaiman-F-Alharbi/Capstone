@@ -23,7 +23,7 @@ import weaviate.util
 app = FastAPI()
 
 IMAGEDIR = "data/temp_images/"
-# api_key = "sO"
+api_key = "sk-proj-UxsihIsXy5aq4Dq3G2DuT3BlbkFJwOAd6S4hvjcZN3nsCKvO"
 
 #Class to store the sended data
 class AccidentDescription(BaseModel):
