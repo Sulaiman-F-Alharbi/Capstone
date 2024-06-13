@@ -11,7 +11,8 @@ dependencies:
   http: ^0.13.3
   image_picker: ^0.8.4+4
   provider: ^6.0.2
-  cloudinary_sdk: ^5.0.0+1 
+  cloudinary_sdk: ^5.0.0+1
+  path_provider: ^2.0.2 
 
 
 dev_dependencies:
@@ -20,4 +21,13 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  fonts:
+    - family: ArabicFont
+      fonts:
+        - asset: font\DINNextLTArabic-Regular-4.ttf
+
+  assets:
+    - assets/app_logo.jpg
+
 
