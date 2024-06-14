@@ -18,7 +18,7 @@ from openai import OpenAI
 import weaviate
 import weaviate.util
 
-
+# uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 app = FastAPI()
 
