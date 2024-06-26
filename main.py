@@ -23,7 +23,7 @@ import weaviate.util
 app = FastAPI()
 
 IMAGEDIR = "data/temp_images/"
-api_key = "sk-proj-UxsihIsXy5aq4Dq3G2DuT3BlbkFJwOAd6S4hvjcZN3nsCKvO"
+api_key = "My API key"
 
 #Class to store the sended data
 class AccidentDescription(BaseModel):
@@ -49,7 +49,6 @@ async def assess_fault(descriptions: AccidentDescription):
     # Here, call your custom GPT model to get the fault assessment and justification
     predicted_dict = get_predict(descriptions, image_url)
     print(predicted_dict['Justification'])
-    print("قولدن حمد")
     fault_assessment = {
         "party_one_fault": predicted_dict['First_Party_Fault'],
         "party_two_fault": predicted_dict['Second_Party_Fault'],
@@ -62,9 +61,9 @@ async def assess_fault(descriptions: AccidentDescription):
 #take an image upload it to cloudinary and return its link(URL)
 def get_url(imagePath):
     cloudinary.config(
-    cloud_name = 'dxz1w6uho',
-    api_key = '634863842981523',
-    api_secret = '7GwzeMp2rrnlO-s1I0_zJoriFJs'
+    cloud_name = 'couldName',
+    api_key = 'my API key',
+    api_secret = 'My secret'
     )
 
     response = cloudinary.uploader.upload(
@@ -83,9 +82,9 @@ def get_predict(descriptions: AccidentDescription, img_url):
     client = OpenAI(api_key= api_key)
 
     cloudinary.config(
-        cloud_name = 'dxz1w6uho',
-        api_key = '634863842981523',
-        api_secret = '7GwzeMp2rrnlO-s1I0_zJoriFJs'
+    cloud_name = 'couldName',
+    api_key = 'my API key',
+    api_secret = 'My secret'
     )
     
 
